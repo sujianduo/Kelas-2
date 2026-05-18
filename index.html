@@ -400,8 +400,8 @@
 <div class="container">
     <img src="SD.png" alt="logo sekolah" class="logo" onerror="this.style.display='none'">
 
-    <h1>📚 二年级汉语第十三到第十四课通关练习</h1>
-    <div style="text-align: center;"><h2>✨ Soal Latihan Bahasa Mandarin Kelas II Bab. 13-14 ✨</h2></div>
+    <h1>二年级汉语第二学期期末考试通关练习</h1>
+    <div style="text-align: center;"><h2>✨ Soal Latihan SAS Bahasa Mandarin Kelas II Semester 2 ✨</h2></div>
 
     <div class="left-title">🎯 选择题 Pilihan Ganda</div>
 
@@ -431,34 +431,31 @@
 <script>
     // ---------- 原始题库，全面包含  年级知识点 ----------
     const rawQuestions = [
-		{id:1,text:"我 wǒ ......", options:["saya","dia","kamu","siapa"],correct:0},
-		{id:2,text:"Adalah ......", options:["是 shì","去 qù","叫 jiào","了 le"],correct:0},
-		{id:3,text:"小学 xiǎo xué ......", options:["SD","SMP","SMA","PAUD"],correct:0},
-		{id:4,text:"Murid SD ......", options:["小学生 xiǎo xué shēnɡ","初中生 chū zhōnɡ shēnɡ","高中生 ɡāo zhōnɡ shēnɡ","大学生 dà xué shēnɡ"],correct:0},
-		{id:5,text:"学生 xué shenɡ ......", options:["murid","guru","orang tua","kepala sekolah"],correct:0},
-		{id:6,text:"Pergi ......", options:["去 qù","是 shì","叫 jiào","岁 suì"],correct:0},
-		{id:7,text:"学校 xué xiào ......", options:["sekolah","rumah sakit","bank","taman"],correct:0},
-		{id:8,text:"Bernama/memanggil ......", options:["叫 jiào","去 qù","是 shì","我 wǒ"],correct:0},
-		{id:9,text:"今年 jīn nián ......", options:["tahun ini","bulan ini","hari ini","sekarang"],correct:0},
-		{id:10,text:"Berumur 8 tahun ......", options:["八岁 bā suì","七岁 qī suì","九岁 jiǔ suì","六岁 liù suì"],correct:0},
-		{id:11,text:"年级 nián jí ......", options:["tingkat kelas","semester","ruang kelas","tahun ini"],correct:0},
-		{id:12,text:"Kelas 2 ......", options:["二年级 èr nián jí","一年级 yī nián jí","三年级 sān nián jí","四年级 sì nián jí"],correct:0},
-		{id:13,text:"老师 lǎo shī ......", options:["guru","murid","orang tua","kepala sekolah"],correct:0},
-		{id:14,text:"Teman sekolah ......", options:["同学 tónɡ xué","学校 xué xiào","老师 lǎo shī","小学 xiǎo xué"],correct:0},
-		{id:15,text:"开学 kāi xué ......", options:["mulai masuk sekolah","pulang sekolah","istirahat","belajar"],correct:0},
-		{id:16,text:"Ibu ......", options:["妈妈 mā ma","爸爸 bà ba","姐姐 jiě jie","哥哥 ɡē ɡe"],correct:0},
-		{id:17,text:"送 sònɡ ......", options:["mengantar","adalah","pergi","sudah"],correct:0},
-		{id:18,text:"Sudah ......", options:["了 le","我 wǒ","岁 suì","早 zǎo"],correct:0},
-		{id:19,text:"早 zǎo ......", options:["pagi","siang","malam","sore"],correct:0},
-		{id:20,text:"Tas sekolah ......", options:["书包 shū bāo","铅笔 qiān bǐ","桌子 zhuō zi","汽车 qì chē"],correct:0},
-		{id:21,text:"Saya adalah murid SD. <br>wǒ shì xiǎo xué shēnɡ", options:["我是小学生。","我是初中生。","我是高中生。","我是大学生。"],correct:0},
-		{id:22,text:"Saya berumur 8 tahun. <br>wǒ bā suì", options:["我八岁。","我六岁。","我七岁。","我九岁。"],correct:0},
-		{id:23,text:"Saya pergi ke sekolah. <br>wǒ qù xué xiào", options:["我去学校。","我去食堂。","我去操场。","我去教室。"],correct:0},
-		{id:24,text:"Saya kelas 2. <br>wǒ shànɡ èr nián jí", options:["我上二年级。","我上一年级。","我上三年级。","我上四年级。"],correct:0},
-		{id:25,text:"我叫宝宝。 <br>wǒ jiào bǎo bǎo", options:["Saya bernama Baobao.","Saya pergi ke sekolah.","Saya adalah murid SD.","Saya berumur 8 tahun."],correct:0},
-		{id:26,text:"我上小学二年级。 <br>wǒ shànɡ xiǎo xué èr nián jí", options:["Saya kelas 2 SD.","Saya kelas 1 SD.","Saya kelas 3 SD.","Saya kelas 4 SD."],correct:0},
-		{id:27,text:"我今年八岁。 <br>wǒ jīn nián bā suì", options:["Saya tahun ini berumur 8 tahun.","Saya tahun ini berumur 7 tahun.","Saya tahun ini berumur 6 tahun.","Saya tahun ini berumur 9 tahun."],correct:0},
-		{id:28,text:"妈妈送我去学校。 <br>mā ma sònɡ wǒ qù xué xiào", options:["Ibu mengantar saya pergi ke sekolah.","Ayah mengantar saya pergi ke sekolah.","Ibu mengantar saya pergi ke taman.","Ayah mengantar saya pergi ke taman."],correct:0}
+		{id:1,text:"见 jiàn ......", options:["bertemu","pergi","mengantar","belajar"],correct:0},
+		{id:2,text:"Guru ......", options:["老师 lǎo shī","学生 xué shenɡ","校长 xiào zhǎnɡ","家长 jiā zhǎnɡ"],correct:0},
+		{id:3,text:"Belajar ......", options:["学 xué","写 xiě","说 shuō","见 jiàn"],correct:0},
+		{id:4,text:"汉语 hàn yǔ ......", options:["Bahasa Mandarin","Bahasa Indonesia","Bahasa Inggris","Bahasa Rusia"],correct:0},
+		{id:5,text:"Halo ......", options:["你好 nǐ hǎo","请坐 qǐnɡ zuò","谢谢 xiè xie","请便 qǐnɡ biàn"],correct:0},
+		{id:6,text:"你 nǐ ......", options:["kamu","saya","dia","kami"],correct:0},
+		{id:7,text:"Saya ......", options:["我 wǒ","你 nǐ","他 tā","有 yǒu"],correct:0},
+		{id:8,text:"是 shì ......", options:["adalah","apa","tidak","punya"],correct:0},
+		{id:9,text:"学生 xué shenɡ ......", options:["murid","guru","kepala sekolah","orang tua"],correct:0},
+		{id:10,text:"Makan ......", options:["吃 chī","喝 hē","说 shuō","买 mǎi"],correct:0},
+		{id:11,text:"喝 hē ......", options:["minum","makan","tidur","bicara"],correct:0},
+		{id:12,text:"Susu sapi ......", options:["牛奶 niú nǎi","水果 shuǐ ɡuǒ","米饭 mǐ fàn","蛋糕 dàn ɡāo"],correct:0},
+		{id:13,text:"米饭 mǐ fàn ......", options:["nasi","susu sapi","buah","mie"],correct:0},
+		{id:14,text:"pergi ......", options:["去 qù","学 xué","喝 hē","送 sònɡ"],correct:0},
+		{id:15,text:"学校 xué xiào ......", options:["sekolah","kantin","rumah","perpustakaan"],correct:0},
+		{id:16,text:"nǐ hǎo", options:["你好","汉语","你们","你家"],correct:0},
+		{id:17,text:"shuō", options:["说","学","写","画"],correct:0},
+		{id:18,text:"hàn yǔ", options:["汉语","英语","法语","日语"],correct:0},
+		{id:19,text:"xué shenɡ", options:["学生","老师","校长","家长"],correct:0},
+		{id:20,text:"niú nǎi", options:["牛奶","青菜","米饭","水果"],correct:0},
+		{id:21,text:"Saya adalah murid. <br>wǒ shì xué shenɡ", options:["我是学生。","我去学校。","我学汉语。","我是老师。"],correct:0},
+		{id:22,text:"Saya belajar bahasa Mandarin. <br>wǒ xué hàn yǔ", options:["我学汉语。","我是学生。","我去学校。","我学画画。"],correct:0},
+		{id:23,text:"Saya minum susu sapi. <br>wǒ hē niú nǎi", options:["我喝牛奶。","我吃米饭。","我吃面条。","我喝咖啡。"],correct:0},
+		{id:24,text:"Saya makan nasi. <br>wǒ chī mǐ fàn", options:["我吃米饭。","我喝牛奶。","我吃面条。","我吃豆腐。"],correct:0},
+		{id:25,text:"Saya pergi ke sekolah. <br>wǒ qù xué xiào", options:["我去学校。","我是学生。","我学汉语。","我去公园。"],correct:0}
     ];
 
     let currentQuestions = [];      // 存储 shuffle 之后带 shuffledOptions & shuffledCorrect 的题目
