@@ -400,8 +400,8 @@
 <div class="container">
     <img src="SD.png" alt="logo sekolah" class="logo" onerror="this.style.display='none'">
 
-    <h1>二年级汉语第二学期期末考试通关练习</h1>
-    <div style="text-align: center;"><h2>✨ Soal Latihan SAS Bahasa Mandarin Kelas II Semester 2 ✨</h2></div>
+    <h1>二年级汉语第一学期第一到第三课测验通关练习</h1>
+    <div style="text-align: center;"><h2>✨ Soal Latihan Sumatif Bahasa Mandarin Kelas II Semester 1 Bab. 1-3✨</h2></div>
 
     <div class="left-title">🎯 选择题 Pilihan Ganda</div>
 
@@ -431,31 +431,21 @@
 <script>
     // ---------- 原始题库，全面包含  年级知识点 ----------
     const rawQuestions = [
-		{id:1,text:"见 jiàn ......", options:["bertemu","pergi","mengantar","belajar"],correct:0},
-		{id:2,text:"Guru ......", options:["老师 lǎo shī","学生 xué shenɡ","校长 xiào zhǎnɡ","家长 jiā zhǎnɡ"],correct:0},
-		{id:3,text:"Belajar ......", options:["学 xué","写 xiě","说 shuō","见 jiàn"],correct:0},
-		{id:4,text:"汉语 hàn yǔ ......", options:["Bahasa Mandarin","Bahasa Indonesia","Bahasa Inggris","Bahasa Rusia"],correct:0},
-		{id:5,text:"Halo ......", options:["你好 nǐ hǎo","请坐 qǐnɡ zuò","谢谢 xiè xie","请便 qǐnɡ biàn"],correct:0},
-		{id:6,text:"你 nǐ ......", options:["kamu","saya","dia","kami"],correct:0},
-		{id:7,text:"Saya ......", options:["我 wǒ","你 nǐ","他 tā","有 yǒu"],correct:0},
-		{id:8,text:"是 shì ......", options:["adalah","apa","tidak","punya"],correct:0},
-		{id:9,text:"学生 xué shenɡ ......", options:["murid","guru","kepala sekolah","orang tua"],correct:0},
-		{id:10,text:"Makan ......", options:["吃 chī","喝 hē","说 shuō","买 mǎi"],correct:0},
-		{id:11,text:"喝 hē ......", options:["minum","makan","tidur","bicara"],correct:0},
-		{id:12,text:"Susu sapi ......", options:["牛奶 niú nǎi","水果 shuǐ ɡuǒ","米饭 mǐ fàn","蛋糕 dàn ɡāo"],correct:0},
-		{id:13,text:"米饭 mǐ fàn ......", options:["nasi","susu sapi","buah","mie"],correct:0},
-		{id:14,text:"pergi ......", options:["去 qù","学 xué","喝 hē","送 sònɡ"],correct:0},
-		{id:15,text:"学校 xué xiào ......", options:["sekolah","kantin","rumah","perpustakaan"],correct:0},
-		{id:16,text:"nǐ hǎo", options:["你好","汉语","你们","你家"],correct:0},
-		{id:17,text:"shuō", options:["说","学","写","画"],correct:0},
-		{id:18,text:"hàn yǔ", options:["汉语","英语","法语","日语"],correct:0},
-		{id:19,text:"xué shenɡ", options:["学生","老师","校长","家长"],correct:0},
-		{id:20,text:"niú nǎi", options:["牛奶","青菜","米饭","水果"],correct:0},
-		{id:21,text:"Saya adalah murid. <br>wǒ shì xué shenɡ", options:["我是学生。","我去学校。","我学汉语。","我是老师。"],correct:0},
-		{id:22,text:"Saya belajar bahasa Mandarin. <br>wǒ xué hàn yǔ", options:["我学汉语。","我是学生。","我去学校。","我学画画。"],correct:0},
-		{id:23,text:"Saya minum susu sapi. <br>wǒ hē niú nǎi", options:["我喝牛奶。","我吃米饭。","我吃面条。","我喝咖啡。"],correct:0},
-		{id:24,text:"Saya makan nasi. <br>wǒ chī mǐ fàn", options:["我吃米饭。","我喝牛奶。","我吃面条。","我吃豆腐。"],correct:0},
-		{id:25,text:"Saya pergi ke sekolah. <br>wǒ qù xué xiào", options:["我去学校。","我是学生。","我学汉语。","我去公园。"],correct:0}
+		{id:1,text:"Buku ......", options:["书 shū","书包 shū bāo","尺子 chǐ zi","刀子 dāo zi"],correct:0},
+		{id:2,text:"书包 shū bāo ......", options:["tas sekolah","buku","penggaris","pensil"],correct:0},
+		{id:3,text:"Penggaris ......", options:["尺子 chǐ zi","书包 shū bāo","书 shū","剪刀 jiǎn dāo"],correct:0},
+		{id:4,text:"Gunting ......", options:["剪刀 jiǎn dāo","刀子 dāo zi","卷笔刀juǎn bǐ dāo","刀片 dāo piàn"],correct:0},
+		{id:5,text:"卷笔刀 juǎn bǐ dāo ......", options:["rautan","pisau","gunting","kater"],correct:0},
+		{id:6,text:"Pensil ......", options:["铅笔 qiān bǐ","圆珠笔 yuán zhū bǐ","彩色笔 cǎi sè bǐ","毛笔 máo bǐ"],correct:0},
+		{id:7,text:"Meja ......", options:["桌子 zhuō zi","椅子 yǐ zi","尺子 chǐ zi","刀子 dāo zi"],correct:0},
+		{id:8,text:"椅子 yǐ zi ......", options:["kursi","meja","penggaris","pisau"],correct:0},
+		{id:9,text:"Saya ......", options:["我 wǒ","有 yǒu","没有 méi yǒu","你 nǐ"],correct:0},
+		{id:10,text:"有 yǒu ......", options:["punya","saya","ini","adalah"],correct:0},
+		{id:11,text:"Saya punya tas sekolah.", options:["我有书包。","我没有书包。","他有书包。","他没有书包。"],correct:0},
+		{id:12,text:"Saya tidak punya gunting.", options:["我没有剪刀。","我有剪刀。","他没有剪刀。","他有剪刀。"],correct:0},
+		{id:13,text:"Saya punya 1 batang pensil.", options:["我有一支铅笔。","我有一本书。","我有一张桌子","我有一把尺子。"],correct:0},
+		{id:14,text:"Saya tidak punya pulpen.", options:["我没有圆珠笔。","我没有铅笔。","我没有尺子。","我没有卷笔刀。"],correct:0},
+		{id:15,text:"Saya punya 1 buah meja.", options:["我有一张桌子。","我有一把椅子。","我有一把尺子。","我有一个书包。"],correct:0}
     ];
 
     let currentQuestions = [];      // 存储 shuffle 之后带 shuffledOptions & shuffledCorrect 的题目
