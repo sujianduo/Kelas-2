@@ -400,8 +400,8 @@
 <div class="container">
     <img src="SD.png" alt="logo sekolah" class="logo" onerror="this.style.display='none'">
 
-    <h1>二年级汉语第一学期第一到第三课测验通关练习</h1>
-    <div style="text-align: center;"><h2>✨ Soal Latihan Sumatif Bahasa Mandarin Kelas II Semester 1 Bab. 1-3✨</h2></div>
+    <h1>二年级第一学期第四到第六课汉语测验通关练习</h1>
+    <div style="text-align: center;"><h2>✨Soal Latihan Bahasa Mandarin Kelas II Semester 1 Bab. 4-6✨</h2></div>
 
     <div class="left-title">🎯 选择题 Pilihan Ganda</div>
 
@@ -431,21 +431,21 @@
 <script>
     // ---------- 原始题库，全面包含  年级知识点 ----------
     const rawQuestions = [
-		{id:1,text:"Buku ......", options:["书 shū","书包 shū bāo","尺子 chǐ zi","刀子 dāo zi"],correct:0},
-		{id:2,text:"书包 shū bāo ......", options:["tas sekolah","buku","penggaris","pensil"],correct:0},
-		{id:3,text:"Penggaris ......", options:["尺子 chǐ zi","书包 shū bāo","书 shū","剪刀 jiǎn dāo"],correct:0},
-		{id:4,text:"Gunting ......", options:["剪刀 jiǎn dāo","刀子 dāo zi","卷笔刀juǎn bǐ dāo","刀片 dāo piàn"],correct:0},
-		{id:5,text:"卷笔刀 juǎn bǐ dāo ......", options:["rautan","pisau","gunting","kater"],correct:0},
-		{id:6,text:"Pensil ......", options:["铅笔 qiān bǐ","圆珠笔 yuán zhū bǐ","彩色笔 cǎi sè bǐ","毛笔 máo bǐ"],correct:0},
-		{id:7,text:"Meja ......", options:["桌子 zhuō zi","椅子 yǐ zi","尺子 chǐ zi","刀子 dāo zi"],correct:0},
-		{id:8,text:"椅子 yǐ zi ......", options:["kursi","meja","penggaris","pisau"],correct:0},
-		{id:9,text:"Saya ......", options:["我 wǒ","有 yǒu","没有 méi yǒu","你 nǐ"],correct:0},
-		{id:10,text:"有 yǒu ......", options:["punya","saya","ini","adalah"],correct:0},
-		{id:11,text:"Saya punya tas sekolah.", options:["我有书包。","我没有书包。","他有书包。","他没有书包。"],correct:0},
-		{id:12,text:"Saya tidak punya gunting.", options:["我没有剪刀。","我有剪刀。","他没有剪刀。","他有剪刀。"],correct:0},
-		{id:13,text:"Saya punya 1 batang pensil.", options:["我有一支铅笔。","我有一本书。","我有一张桌子","我有一把尺子。"],correct:0},
-		{id:14,text:"Saya tidak punya pulpen.", options:["我没有圆珠笔。","我没有铅笔。","我没有尺子。","我没有卷笔刀。"],correct:0},
-		{id:15,text:"Saya punya 1 buah meja.", options:["我有一张桌子。","我有一把椅子。","我有一把尺子。","我有一个书包。"],correct:0}
+		{id:1,text:"爸爸 bà ba ......", options:["ayah","ibu","kakak laki-laki","adik laki-laki"],correct:0},
+		{id:2,text:"Kakak laki-laki ......", options:["哥哥 ɡē ɡe","爸爸 bà ba","弟弟 dì di","姐姐 jiě jie"],correct:0},
+		{id:3,text:"Adik laki-laki ......", options:["弟弟 dì di","哥哥 ɡē ɡe","爸爸 bà ba","妹妹 mèi mei"],correct:0},
+		{id:4,text:"Ibu ......", options:["妈妈 mā ma","爸爸 bà ba","姐姐 jiě jie","妹妹 mèi mei"],correct:0},
+		{id:5,text:"姐姐 jiě jie ......", options:["kakak perempuan","adik perempuan","ibu","bibi"],correct:0},
+		{id:6,text:"妹妹 mèi mei ......", options:["adik perempuan","kakak perempuan","ibu","nenek"],correct:0},
+		{id:7,text:"Bekerja ......", options:["上班 shànɡ bān","什么 shén me","功课 ɡōnɡ kè","看书 kàn shū"],correct:0},
+		{id:8,text:"Membaca buku ......", options:["看书 kàn shū","扫地 sǎo dì","唱歌 chànɡ ɡē","上班 shànɡ bān"],correct:0},
+		{id:9,text:"Menyapu lantai ......", options:["扫地 sǎo dì","看书 kàn shū","唱歌 chànɡ ɡē","站着 zhàn zhe"],correct:0},
+		{id:10,text:"Menyanyi ......", options:["唱歌 chànɡ ɡē","看书 kàn shū","扫地 sǎo dì","坐着 zuò zhe"],correct:0},
+		{id:11,text:"Ayah pergi bekerja. 爸 爸 去 __________ 。", options:["上班 shànɡ bān","唱歌 chànɡ ɡē","看书 kàn shū","扫地 sǎo dì"],correct:0},
+		{id:12,text:"Kakak perempuan menyapu lantai. __________ 扫 地 。", options:["姐姐 jiě jie","弟弟 dì di","哥哥 ɡē ɡe","妹妹 mèi mei"],correct:0},
+		{id:13,text:"Kakak laki-laki membaca buku. 哥 哥 __________ 。", options:["看书 kàn shū","扫地 sǎo dì","唱歌 chànɡ ɡē","上班 shànɡ bān"],correct:0},
+		{id:14,text:"Adik laki-laki mengerjakan PR. 弟 弟 做 __________ 。", options:["功课 ɡōnɡ kè","什么 shén me","站着 zhàn zhe","唱歌 chànɡ ɡē"],correct:0},
+		{id:15,text:"Adik perempuan bisa bernyanyi. __________ 会 唱 歌 。", options:["妹妹 mèi mei","姐姐 jiě jie","弟弟 dì di","哥哥 ɡē ɡe"],correct:0}
     ];
 
     let currentQuestions = [];      // 存储 shuffle 之后带 shuffledOptions & shuffledCorrect 的题目
