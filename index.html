@@ -400,8 +400,8 @@
 <div class="container">
     <img src="SD.png" alt="logo sekolah" class="logo" onerror="this.style.display='none'">
 
-    <h1>二年级第一学期第四到第六课汉语测验通关练习</h1>
-    <div style="text-align: center;"><h2>✨Soal Latihan Bahasa Mandarin Kelas II Semester 1 Bab. 4-6✨</h2></div>
+    <h1>二年级汉语第一学期第七到第九课测验通关练习</h1>
+    <div style="text-align: center;"><h2>✨Soal Latihan Bahasa Mandarin Kelas II Semester 1 Bab. 7-9✨</h2></div>
 
     <div class="left-title">🎯 选择题 Pilihan Ganda</div>
 
@@ -431,21 +431,21 @@
 <script>
     // ---------- 原始题库，全面包含  年级知识点 ----------
     const rawQuestions = [
-		{id:1,text:"爸爸 bà ba ......", options:["ayah","ibu","kakak laki-laki","adik laki-laki"],correct:0},
-		{id:2,text:"Kakak laki-laki ......", options:["哥哥 ɡē ɡe","爸爸 bà ba","弟弟 dì di","姐姐 jiě jie"],correct:0},
-		{id:3,text:"Adik laki-laki ......", options:["弟弟 dì di","哥哥 ɡē ɡe","爸爸 bà ba","妹妹 mèi mei"],correct:0},
-		{id:4,text:"Ibu ......", options:["妈妈 mā ma","爸爸 bà ba","姐姐 jiě jie","妹妹 mèi mei"],correct:0},
-		{id:5,text:"姐姐 jiě jie ......", options:["kakak perempuan","adik perempuan","ibu","bibi"],correct:0},
-		{id:6,text:"妹妹 mèi mei ......", options:["adik perempuan","kakak perempuan","ibu","nenek"],correct:0},
-		{id:7,text:"Bekerja ......", options:["上班 shànɡ bān","什么 shén me","功课 ɡōnɡ kè","看书 kàn shū"],correct:0},
-		{id:8,text:"Membaca buku ......", options:["看书 kàn shū","扫地 sǎo dì","唱歌 chànɡ ɡē","上班 shànɡ bān"],correct:0},
-		{id:9,text:"Menyapu lantai ......", options:["扫地 sǎo dì","看书 kàn shū","唱歌 chànɡ ɡē","站着 zhàn zhe"],correct:0},
-		{id:10,text:"Menyanyi ......", options:["唱歌 chànɡ ɡē","看书 kàn shū","扫地 sǎo dì","坐着 zuò zhe"],correct:0},
-		{id:11,text:"Ayah pergi bekerja.<br>爸 爸 去 __________ 。", options:["上班 shànɡ bān","唱歌 chànɡ ɡē","看书 kàn shū","扫地 sǎo dì"],correct:0},
-		{id:12,text:"Kakak perempuan menyapu lantai.<br>__________ 扫 地 。", options:["姐姐 jiě jie","弟弟 dì di","哥哥 ɡē ɡe","妹妹 mèi mei"],correct:0},
-		{id:13,text:"Kakak laki-laki membaca buku.<br>哥 哥 __________ 。", options:["看书 kàn shū","扫地 sǎo dì","唱歌 chànɡ ɡē","上班 shànɡ bān"],correct:0},
-		{id:14,text:"Adik laki-laki mengerjakan PR.<br>弟 弟 做 __________ 。", options:["功课 ɡōnɡ kè","什么 shén me","站着 zhàn zhe","唱歌 chànɡ ɡē"],correct:0},
-		{id:15,text:"Adik perempuan bisa bernyanyi.<br>__________ 会 唱 歌 。", options:["妹妹 mèi mei","姐姐 jiě jie","弟弟 dì di","哥哥 ɡē ɡe"],correct:0}
+		{id:1,text:"汽车 qì chē ......", options:["mobil","sepeda","becak","kereta api"],correct:0},
+		{id:2,text:"Kereta api ......", options:["火车 huǒ chē","汽车 qì chē","飞机 fēi jī","轮船 lún chuán"],correct:0},
+		{id:3,text:"自行车 zì xínɡ chē ......", options:["sepeda","mobil","becak","kereta api"],correct:0},
+		{id:4,text:"Becak ......", options:["三轮车 sān lún chē","自行车zì xínɡ chē","轮船lún chuán","火车 huǒ chē"],correct:0},
+		{id:5,text:"飞机 fēi jī ......", options:["pesawat terbang","mobil","kapal","becak"],correct:0},
+		{id:6,text:"Kapal ......", options:["轮船 lún chuán","自行车 zì xínɡ chē","飞机 fēi jī","汽车 qì chē"],correct:0},
+		{id:7,text:"天 tiān ......", options:["langit","laut","jalan","sungai"],correct:0},
+		{id:8,text:"Laut ......", options:["海 hǎi","天 tiān","车 chē","船 chuán"],correct:0},
+		{id:9,text:"Naik ke kendaraan ......", options:["上车 shànɡ chē","下车 xià chē","开车 kāi chē","等车 děnɡ chē"],correct:0},
+		{id:10,text:"Turun dari kendaraan ......", options:["下车 xià chē","开车 kāi chē","上车 shànɡ chē","骑车 qí chē"],correct:0},
+		{id:11,text:"wǒ zuò qì chē qù shànɡ xué<br>我 坐 __________ 去 上 学 。<br>Saya pergi ke sekolah naik mobil.", options:["汽车","火车","飞机","轮船"],correct:0},
+		{id:12,text:"wǒ huì qí zì xínɡ chē<br>我 会 骑 _____________ 。<br>Saya bisa mengendarai sepeda.", options:["自行车","三轮车","摩托车","面包车"],correct:0},
+		{id:13,text:"bǎo bǎo zuò sān lún chē qù xué xiào<br>宝 宝 坐 _____________ 去 学 校 。<br>Baobao pergi ke sekolah naik becak.", options:["三轮车","自行车","摩托车","面包车"],correct:0},
+		{id:14,text:"fēi jī zài tiān shànɡ fēi<br>__________ 在 天 上 飞 。<br>Pesawat terbang di langit.", options:["飞机","轮船","汽车","火车"],correct:0},
+		{id:15,text:"lún chuán zài hǎi shànɡ hánɡ xínɡ<br>__________ 在 海 上 航 行 。<br>Kapal berlayar di laut.", options:["轮船","汽车","火车","飞机"],correct:0}   				 
     ];
 
     let currentQuestions = [];      // 存储 shuffle 之后带 shuffledOptions & shuffledCorrect 的题目
