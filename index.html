@@ -3,25 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>考试模拟练习 | 趣味闯关</title>
+    <title>考试模拟练习 | Latihan SAS Bahasa Mandarin Kelas 2</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            /* 系统优先字体，适应手机/电脑，保证可读性 */
             font-family: system-ui, 'Segoe UI', 'Poppins', 'Roboto', 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
         }
 
         body {
-            /* 统一浅蓝色背景整体氛围，从柔和的天蓝到通透的水蓝 */
             background: linear-gradient(135deg, #c2e0ff 0%, #b3d9ff 100%);
             min-height: 100vh;
             padding: 30px 20px;
             position: relative;
         }
 
-        /* 装饰光晕元素，依然保持浅蓝氛围 */
         body::before {
             content: "";
             position: fixed;
@@ -48,11 +45,10 @@
             z-index: 0;
         }
 
-        /* 主卡片容器为浅蓝白色调，保证在统一蓝色背景中仍有层次感且舒适 */
         .container {
             max-width: 950px;
             margin: 0 auto;
-            background: #eef6fe;   /* 浅蓝底色，与body背景协奏但更亮 */
+            background: #eef6fe;
             backdrop-filter: blur(2px);
             border-radius: 48px;
             box-shadow: 0 25px 50px -12px rgba(0, 40, 70, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.7) inset;
@@ -111,7 +107,6 @@
             background: none;
         }
 
-        /* 进度条 */
         .progress-bar {
             height: 10px;
             background-color: #cae4f5;
@@ -129,7 +124,6 @@
             box-shadow: 0 0 6px #7bdaa4;
         }
 
-        /* 题目卡片：半透白，保持清爽 */
         .question {
             margin-bottom: 28px;
             padding: 22px 24px;
@@ -232,7 +226,6 @@
             font-weight: bold;
         }
 
-        /* 按钮组 */
         .controls {
             display: flex;
             justify-content: center;
@@ -274,7 +267,6 @@
             box-shadow: 0 6px 14px rgba(0,0,0,0.05);
         }
 
-        /* 结果面板调整为轻柔蓝色背景 */
         .result {
             text-align: center;
             padding: 32px 28px;
@@ -336,7 +328,6 @@
             color: #146b3a;
         }
 
-        /* 完全响应式 + 字体自适应增强 */
         @media (max-width: 650px) {
             .container {
                 padding: 20px 18px;
@@ -366,7 +357,6 @@
             }
         }
 
-        /* 确保所有文字在任何设备上都清晰可读 */
         .fineprint {
             text-align: center;
             margin-top: 25px;
@@ -381,7 +371,6 @@
         .option {
             word-break: break-word;
         }
-        /* 针对可能的小字号加强 */
         @media (max-width: 480px) {
             .option {
                 font-size: 0.85rem;
@@ -399,9 +388,8 @@
 <body>
 <div class="container">
     <img src="SD.png" alt="logo sekolah" class="logo" onerror="this.style.display='none'">
-
-    <h1>二年级汉语第一学期第七到第九课测验通关练习</h1>
-    <div style="text-align: center;"><h2>✨Soal Latihan Bahasa Mandarin Kelas II Semester 1 Bab. 7-9✨</h2></div>
+	
+    <div style="text-align: center;"><h2>✨Latihan Soal SAS Bahasa Mandarin Kelas II Semester Ganjil✨</h2></div>
 
     <div class="left-title">🎯 选择题 Pilihan Ganda</div>
 
@@ -429,30 +417,48 @@
 </div>
 
 <script>
-    // ---------- 原始题库，全面包含  年级知识点 ----------
     const rawQuestions = [
-		{id:1,text:"汽车 qì chē ......", options:["mobil","sepeda","becak","kereta api"],correct:0},
-		{id:2,text:"Kereta api ......", options:["火车 huǒ chē","汽车 qì chē","飞机 fēi jī","轮船 lún chuán"],correct:0},
-		{id:3,text:"自行车 zì xínɡ chē ......", options:["sepeda","mobil","becak","kereta api"],correct:0},
-		{id:4,text:"Becak ......", options:["三轮车 sān lún chē","自行车zì xínɡ chē","轮船lún chuán","火车 huǒ chē"],correct:0},
-		{id:5,text:"飞机 fēi jī ......", options:["pesawat terbang","mobil","kapal","becak"],correct:0},
-		{id:6,text:"Kapal ......", options:["轮船 lún chuán","自行车 zì xínɡ chē","飞机 fēi jī","汽车 qì chē"],correct:0},
-		{id:7,text:"天 tiān ......", options:["langit","laut","jalan","sungai"],correct:0},
-		{id:8,text:"Laut ......", options:["海 hǎi","天 tiān","车 chē","船 chuán"],correct:0},
-		{id:9,text:"Naik ke kendaraan ......", options:["上车 shànɡ chē","下车 xià chē","开车 kāi chē","等车 děnɡ chē"],correct:0},
-		{id:10,text:"Turun dari kendaraan ......", options:["下车 xià chē","开车 kāi chē","上车 shànɡ chē","骑车 qí chē"],correct:0},
-		{id:11,text:"wǒ zuò qì chē qù shànɡ xué<br>我 坐 __________ 去 上 学 。<br>Saya pergi ke sekolah naik mobil.", options:["汽车","火车","飞机","轮船"],correct:0},
-		{id:12,text:"wǒ huì qí zì xínɡ chē<br>我 会 骑 _____________ 。<br>Saya bisa mengendarai sepeda.", options:["自行车","三轮车","摩托车","面包车"],correct:0},
-		{id:13,text:"bǎo bǎo zuò sān lún chē qù xué xiào<br>宝 宝 坐 _____________ 去 学 校 。<br>Baobao pergi ke sekolah naik becak.", options:["三轮车","自行车","摩托车","面包车"],correct:0},
-		{id:14,text:"fēi jī zài tiān shànɡ fēi<br>__________ 在 天 上 飞 。<br>Pesawat terbang di langit.", options:["飞机","轮船","汽车","火车"],correct:0},
-		{id:15,text:"lún chuán zài hǎi shànɡ hánɡ xínɡ<br>__________ 在 海 上 航 行 。<br>Kapal berlayar di laut.", options:["轮船","汽车","火车","飞机"],correct:0}   				 
+        {id: 1, text: "Buku ......", options: ["书 shū", "书包 shū bāo", "尺子 chǐ zi"], correct: 0},
+        {id: 2, text: "书包 shū bāo ......", options: ["tas sekolah", "buku", "penggaris"], correct: 0},
+        {id: 3, text: "卷笔刀 juǎn bǐ dāo ......", options: ["rautan", "pisau", "gunting"], correct: 0},
+        {id: 4, text: "Pensil ......", options: ["铅笔 qiān bǐ", "圆珠笔 yuán zhū bǐ", "彩色笔 cǎi sè bǐ"], correct: 0},
+        {id: 5, text: "Meja ......", options: ["桌子 zhuō zi", "椅子 yǐ zi", "尺子 chǐ zi"], correct: 0},
+        {id: 6, text: "椅子 yǐ zi ......", options: ["kursi", "meja", "penggaris"], correct: 0},
+        {id: 7, text: "Saya ......", options: ["我 wǒ", "有 yǒu", "没有 méi yǒu"], correct: 0},
+        {id: 8, text: "有 yǒu ......", options: ["punya", "saya", "ini"], correct: 0},
+        {id: 9, text: "爸爸 bà ba ......", options: ["ayah", "kakak laki-laki", "adik laki-laki"], correct: 0},
+        {id: 10, text: "Kakak laki-laki ......", options: ["哥哥 ɡē ɡe", "弟弟 dì di", "爸爸 bà ba"], correct: 0},
+        {id: 11, text: "Adik laki-laki ......", options: ["弟弟 dì di", "哥哥 ɡē ɡe", "爸爸 bà ba"], correct: 0},
+        {id: 12, text: "Ibu ......", options: ["妈妈 mā ma", "姐姐 jiě jie", "妹妹 mèi mei"], correct: 0},
+        {id: 13, text: "姐姐 jiě jie ......", options: ["kakak perempuan", "adik perempuan", "ibu"], correct: 0},
+        {id: 14, text: "妹妹 mèi mei ......", options: ["adik perempuan", "kakak perempuan", "ibu"], correct: 0},
+        {id: 15, text: "Membaca buku ......", options: ["看书 kàn shū", "扫地 sǎo dì", "唱歌 chànɡ ɡē"], correct: 0},
+        {id: 16, text: "Menyanyi ......", options: ["唱歌 chànɡ ɡē", "看书 kàn shū", "扫地 sǎo dì"], correct: 0},
+        {id: 17, text: "汽车 qì chē ......", options: ["mobil", "sepeda", "becak"], correct: 0},
+        {id: 18, text: "Kereta api ......", options: ["火车 huǒ chē", "汽车 qì chē", "飞机 fēi jī"], correct: 0},
+        {id: 19, text: "自行车 zì xínɡ chē ......", options: ["sepeda", "mobil", "becak"], correct: 0},
+        {id: 20, text: "Becak ......", options: ["三轮车 sān lún chē", "轮船 lún chuán", "自行车 zì xínɡ chē"], correct: 0},
+        {id: 21, text: "飞机 fēi jī ......", options: ["pesawat terbang", "mobil", "kapal"], correct: 0},
+        {id: 22, text: "Kapal ......", options: ["轮船 lún chuán", "自行车 zì xínɡ chē", "飞机 fēi jī"], correct: 0},
+        {id: 23, text: "Laut ......", options: ["海 hǎi", "天 tiān", "车 chē"], correct: 0},
+        {id: 24, text: "Naik ke kendaraan ......", options: ["上车 shànɡ chē", "开车 kāi chē", "下车 xià chē"], correct: 0},
+        {id: 25, text: "Turun dari kendaraan ......", options: ["下车 xià chē", "上车 shànɡ chē", "开车 kāi chē"], correct: 0},
+		{id: 26, text: "wǒ yǒu shū bāo<br>我 _______ 书 包 。", options: ["有", "去", "坐"], correct: 0},
+		{id: 27, text: "wǒ yǒu yī zhī qiān bǐ<br>我 有 一 支 __________ 。", options: ["铅笔", "剪刀", "汽车"], correct: 0},
+		{id: 28, text: " jiě jie sǎo dì<br>__________ 扫 地 。", options: ["姐姐", "妹妹", "妈妈"], correct: 0},
+		{id: 29, text: "wǒ zuò qì chē qù shànɡ xué<br>我 坐 __________ 去 上 学 。", options: ["汽车", "飞机", "火车"], correct: 0},
+		{id: 30, text: "wǒ huì qí zì xínɡ chē<br>我 会 骑 _____________ 。", options: ["自行车", "三轮车", "摩托车"], correct: 0},
+		{id: 31, text: "wǒ yǒu qiān bǐ<br>我 有 铅 笔 。", options: ["Saya mempunyai pensil.", "Saya mempunyai gunting.", "Saya mempunyai sepeda."], correct: 0},
+		{id: 32, text: "mèi mei chànɡ ɡē<br>妹 妹 唱 歌 。", options: ["Adik perempuan menyanyi.", "Kakak laki-laki membaca buku.", "Kakak perempuan menyapu lantai."], correct: 0},
+		{id: 33, text: "wǒ zuò qì chē<br>我 坐 汽 车 。", options: ["Saya naik mobil.", "Saya mengerjakan PR.", "Saya mengendarai sepeda"], correct: 0},
+		{id: 34, text: "wǒ yǒu shū<br>Saya mempunyai buku.", options: ["我 有 书 。", "我 有 笔 。", "我 有 刀 。"], correct: 0},
+		{id: 35, text: "ɡē ɡe kàn shū<br>Kakak laki-laki membaca buku.", options: ["哥 哥 看 书 。", "姐 姐 扫 地 。", "妹 妹 唱 歌 。"], correct: 0}
     ];
 
-    let currentQuestions = [];      // 存储 shuffle 之后带 shuffledOptions & shuffledCorrect 的题目
-    let userAnswers = {};           // key: 原始id, value: 选项索引(针对shuffled)
+    let currentQuestions = [];
+    let userAnswers = {};
     let isCheckingAnswers = false;
 
-    // Fisher-Yates 洗牌
     function shuffleArray(arr) {
         for (let i = arr.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
@@ -461,7 +467,6 @@
         return arr;
     }
 
-    // 初始化/重置考试: 随机打乱题目顺序 + 每个题目选项乱序
     function initExam() {
         userAnswers = {};
         isCheckingAnswers = false;
@@ -469,10 +474,8 @@
         if (!container) return;
         container.innerHTML = '';
 
-        // 深拷贝原始题目并打乱题目顺序
         let shuffledQuestions = shuffleArray([...rawQuestions.map(q => ({ ...q }))]);
 
-        // 对每个题目，打乱选项顺序并记录新的正确下标
         currentQuestions = shuffledQuestions.map(q => {
             const optWithOrigIdx = q.options.map((opt, idx) => ({ text: opt, origIdx: idx }));
             const shuffledOpts = shuffleArray([...optWithOrigIdx]);
@@ -490,7 +493,6 @@
         updateProgressBar();
     }
 
-    // 渲染题目（支持<br>内嵌）
     function renderQuestions(questions) {
         const container = document.getElementById('questions-container');
         container.innerHTML = '';
@@ -499,7 +501,6 @@
             const qDiv = document.createElement('div');
             qDiv.className = 'question';
             const displayNumber = idx + 1;
-            // 题目文本保留原有HTML（如<br>标签）
             const titleHtml = `<div class="question-title"><span class="q-num">${displayNumber}</span><span>${question.text}</span></div>`;
             const optionsHtml = question.shuffledOptions.map((opt, optIdx) => {
                 return `<li class="option" data-qid="${question.id}" data-val="${optIdx}">${opt}</li>`;
@@ -508,7 +509,6 @@
             container.appendChild(qDiv);
         });
 
-        // 事件委托处理点击
         if (window._optionHandler) {
             container.removeEventListener('click', window._optionHandler);
         }
@@ -520,7 +520,6 @@
             const val = parseInt(optionEl.getAttribute('data-val'));
             if (isNaN(qid) || isNaN(val)) return;
 
-            // 移除同题目其他选项高亮
             const parentOptions = optionEl.parentElement.querySelectorAll('.option');
             parentOptions.forEach(opt => {
                 opt.classList.remove('selected');
@@ -541,7 +540,6 @@
         if (progressEl) progressEl.style.width = `${percent}%`;
     }
 
-    // 提交并批改
     function submitExam() {
         if (isCheckingAnswers) return;
         const totalQ = currentQuestions.length;
@@ -581,7 +579,6 @@
         resultDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
-    // 高亮正确与错误答案
     function highlightAnswers() {
         isCheckingAnswers = true;
         currentQuestions.forEach(q => {
@@ -601,24 +598,21 @@
                 }
             });
         });
-        // 禁用点击修改
         document.querySelectorAll('.option').forEach(opt => {
             opt.style.cursor = 'default';
         });
     }
 
-    // 重试刷新全部
     function retryExam() {
         isCheckingAnswers = false;
         const resultDiv = document.getElementById('result');
         if (resultDiv) resultDiv.style.display = 'none';
         userAnswers = {};
-        initExam();   // 重新生成顺序与选项乱序
+        initExam();
         updateProgressBar();
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    // 绑定按钮事件
     document.addEventListener('DOMContentLoaded', () => {
         initExam();
         const submitBtn = document.getElementById('submit-btn');
